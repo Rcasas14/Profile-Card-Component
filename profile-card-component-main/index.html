@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale = 1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/profile-card-component-main/app/scss/_main.scss">
+  <link rel="stylesheet" href="/dist/style.css">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="card__content">
+      <div class="card__top">
+        <!-- <img src="images/bg-pattern-card.svg" alt="image pattern"> -->
+        <div class="card__image_pattern"></div>
+        <img src="/profile-card-component-main/images/image-victor.jpg" class="card__person" alt="person">
+      </div>
+      <div class="card__bottom">
+        <p class="name">Victor Crest<span class="age">26</span></p>
+        <p class="place">London</p>
+        <div class="card__text_container">
+          <div class="top_text_container">
+            <span class="text">80K</span>
+            <span class="text">803K</span>
+            <span class="text">1.4K</span>
+          </div>
+          <div class="bot_text_container">
+            <span class="sub_text">Followers</span>
+            <span class="sub_text">Likes</span>
+            <span class="sub_text">Photos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card__background">
+      <img src="images/bg-pattern-top.svg" alt="" class="bgtop">
+      <img src="images/bg-pattern-bottom.svg" alt="" class="bgbottom">
+    </div>
+  </div>
+</body>
+
+</html>

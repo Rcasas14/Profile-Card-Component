@@ -1,0 +1,212 @@
+//Variables
+//Colors
+
+$darkCyan: hsl(185, 75%, 39%);
+$veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$darkGrayishBlue: hsl(227, 10%, 46%);
+$darkGray: hsl(0, 0%, 59%);
+
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $darkCyan;
+}
+
+
+.card {
+    &__background {}
+
+    &__content {
+        position: absolute;
+        margin: 0 auto;
+        max-width: 29.375rem;
+        height: 31.25rem;
+        left: 0;
+        right: 0;
+        top: 19%;
+        z-index: 1;
+        background-color: #fff;
+        box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+
+        @include breakpoint-down(small) {
+            max-width: 20.9375rem;
+            height: 25rem;
+            margin: 0 1.5625rem;
+        }
+    }
+
+    &__image_pattern {
+
+        position: relative;
+        background-image: url('/profile-card-component-main/images/bg-pattern-card.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 12.5rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        @include breakpoint-down(small) {
+            min-height: 9.0625rem;
+        }
+    }
+
+    &__person {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 7.625rem;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 9rem;
+        border-radius: 50%;
+        border: 8px solid #fff;
+
+        @include breakpoint-down(small) {
+            top: 5.625rem;
+            min-height: 5.625rem;
+
+        }
+    }
+
+    &__bottom {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: 5.3125rem;
+
+        @include breakpoint-down(small) {
+            top: 4.25rem;
+
+        }
+
+        .name {
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: #000;
+            margin: 0;
+
+            @include breakpoint-down(small) {
+                font-size: 1.125rem;
+            }
+
+        }
+
+        .age {
+            font-size: 1.375rem;
+            color: $veryDarkDesaturatedBlue;
+            font-weight: 500;
+            margin-left: 0.5625rem;
+            opacity: 0.5;
+        }
+
+        .place {
+            opacity: 0.5;
+            font-size: 1.375rem;
+            margin-top: 0.9375rem;
+
+            @include breakpoint-down(small) {
+                font-size: 0.9375rem;
+            }
+        }
+    }
+
+    &__text_container {
+        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        text-align: center;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        padding-top: 2.5rem;
+        padding-bottom: 1.875rem;
+
+
+        .top_text_container {
+            display: flex;
+            justify-content: space-evenly;
+
+            .text {
+                font-size: 1.375rem;
+                font-weight: 600;
+
+            }
+        }
+
+        .bot_text_container {
+            display: flex;
+            justify-content: space-between;
+
+            .sub_text {
+                font-size: 0.75rem;
+                opacity: 0.5;
+                letter-spacing: 0.125rem;
+
+                &:nth-child(1) {
+                    margin-left: 3.4375rem;
+
+                    @include breakpoint-down(small) {
+                        margin: 0 1.6875rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-right: 0.9375rem;
+
+                    @include breakpoint-down(small) {
+                        margin-right: 2.375rem;
+                    }
+                }
+
+                &:nth-child(3) {
+                    margin-right: 4.0625rem;
+                }
+            }
+        }
+    }
+
+    .bgtop {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        right: 50%;
+        bottom: 30%;
+
+        @include breakpoint-down(small){
+            background-size: cover;
+            width: 139%;
+            right: 44%;
+            bottom: 66%;
+        }
+    }
+
+    .bgbottom {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+
+        @include breakpoint-down(small){
+            background-size: cover;
+            width: 140%;
+            left: 42%;
+            top: 64%;
+        }
+    }
+}

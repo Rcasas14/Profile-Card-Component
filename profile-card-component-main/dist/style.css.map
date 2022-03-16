@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACL,UAAU,EAAE,UAAU;CACzB",
+    "sources": [
+        "../profile-card-component-main/app/scss/style.scss",
+        "../profile-card-component-main/app/scss/_main.scss",
+        "../profile-card-component-main/app/scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
